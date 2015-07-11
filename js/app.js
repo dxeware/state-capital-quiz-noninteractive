@@ -1,30 +1,26 @@
 $(document).ready(function() {
 
+  // Hide state questions and finale on page load
   $('.state-present').hide();
   $('.finale').hide();
 
+  // Show state question when 'Begin' clicked
   $('button#begin').click(function() {
-    //alert('mouse entered .ryu div');
-    //$('.ryu-still').hide();
     $('.instructions').hide();
-    //$('.finale').hide();
     $('.state-one').show();
   });
 
+  // Show finale when 'Submit' clicked
   $('button#submit').click(function() {
-    //alert('mouse entered .ryu div');
-    //$('.ryu-still').hide();
-    //$('.instructions').hide();
     $('.state-present').hide();
     $('.finale').show();
   });
 
+  // Show state question when 'Try Again' clicked
   $('button#try-again').click(function() {
-    //alert('mouse entered .ryu div');
-    //$('.ryu-still').hide();
     $('.finale').hide();
     $('.state-one').show();
-    //$('.instructions').show();
+
 
   });
 
